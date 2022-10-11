@@ -18,33 +18,37 @@
     <body>
         <div id="main-cadastro">
             <h1>Crie Aqui seu Cadastro</h1>
-            <form id="register-form">
+            <form id="registe-form">
                 <div class="full-box">
-                    <label for="firstname">Primeiro Nome</label>
-                    <input type="text" name="firstname" id="firstname"placeholder="Digite seu Primeiro Nome">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+                </div>
+                <div class="half-box spacing">
+                    <label for="firstname">Nome</label>
+                    <input type="text" name="firstname" id="firstname"placeholder="Digite seu Nome">
                 </div>
                 <div class="half-box">
                     <label for="lastname">Sobrenome</label>
                     <input type="text" name="lastname" id="lastname" placeholder="Digite seu Sobrenome">
                 </div>
-                <div class="full-box">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
-                </div>
-                <div class="half-box">
+                <div class="half-box spacing">
                     <label for="passoword">Senha</label>
                     <input type="passoword" name="passoword" id="passoword" placeholder="Digite seu Senha">
                 </div>
-                <div class="full-box">
-                    <label for="passoword-confirm">Senha Novamente</label>
-                    <input type="passoword-confirm" name="passoword-confirm" id="passoword-confirm" placeholder="Digite novamente sua Senha">
+                <div class="half-box">
+                    <label for="passconfirmation">Senha Novamente</label>
+                    <input type="passoword" name="passconfirmation" id="passoword" placeholder="Confirme sua Senha">
                 </div>
                 <div class="full-box">
                    <input type="checkbox" name="agreement" id="agreement">
                    <label for="agreement" id="agreement-label">Eu li e Aceito os <a href="#">Termos Usados</a></label>
                 </div>
+                <div class="full-box">
+                    <input type="submit" id="btn-submit" value="Registrar">
+                 </div>
             </form>
         </div>
+        <p class="error-validation template"></p>
         <script src="JavaScript/script.js"></script>
     </body> 
 </html>
